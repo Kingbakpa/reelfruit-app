@@ -2,22 +2,22 @@
   "version": 2,
   "builds": [
     {
-      "src": "public/index.html",
+      "src": "reelfruit-app/public/index.html",
       "use": "@vercel/static"
     },
     {
-      "src": "api/*.js",
+      "src": "reelfruit-app/api/*.js",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "/api/$1.js"
+      "dest": "/reelfruit-app/api/$1.js"
     },
     {
       "src": "/(.*)",
-      "dest": "/public/$1"
+      "dest": "/reelfruit-app/public/$1"
     }
   ]
 }
