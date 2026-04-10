@@ -16,6 +16,10 @@
       "dest": "/reelfruit-app/api/$1.js"
     },
     {
+      "src": "^/$",
+      "dest": "/reelfruit-app/public/index.html"
+    },
+    {
       "src": "/(.*)",
       "dest": "/reelfruit-app/public/$1"
     }
